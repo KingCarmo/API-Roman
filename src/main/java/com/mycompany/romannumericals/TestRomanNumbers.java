@@ -15,16 +15,14 @@ import javax.ws.rs.core.Response;
  *
  * @author King Carmo
  */
-
+@Path("/users")
 public class TestRomanNumbers {
-    private RomanNumbers converter = new RomanNumbers();
+@GET
+@Path("/{param}")
+public Response sayHelloWorld(@PathParam("param")String Message){
     
-    //Test
-    public void converts1(){
-      
+    String output = "Hello "+Message + "!";
+    
+    return Response.status(200).entity(output).build();
     }
-    
-    
-    
-    
 }

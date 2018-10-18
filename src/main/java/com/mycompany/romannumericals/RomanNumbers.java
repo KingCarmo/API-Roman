@@ -109,9 +109,9 @@ public class RomanNumbers {
         int random = enter.nextInt();
         System.out.println("Your Roman Number is " + RomanNumbers.toRoman(random));
 
-        // Driver method 
         RomanNumbers ob = new RomanNumbers();
-        // Considering inputs given are valid 
+        // Where user enters information
+        System.out.println("Enter your Roman number ");
         String str = enter.next();
         System.out.println(
                 "Here is the Decimal form of Roman Numeral you wanted"
