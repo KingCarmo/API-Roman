@@ -12,17 +12,16 @@ import javax.ws.rs.core.Response;
 
 
 /**
- *
  * @author King Carmo
  */
-@Path("/users")
-public class TestRomanNumbers {
-@GET
-@Path("/{param}")
-public Response sayHelloWorld(@PathParam("param")String Message){
-    
-    String output = "Hello "+Message + "!";
-    
-    return Response.status(200).entity(output).build();
-    }
-}
+//@Path("/users")
+//public class TestRomanNumbers {
+//@GET
+//@Path("/{param}")
+//public Response sayHelloWorld(@PathParam("param")String Message){
+//    
+//    String output = "Hello "+Message + "!";
+//    
+//    return Response.status(200).entity(output).build();
+//    }
+//}

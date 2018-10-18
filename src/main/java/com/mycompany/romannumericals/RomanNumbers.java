@@ -9,14 +9,10 @@ import java.util.Scanner;
 import java.util.TreeMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
 
-/**
- *
- * @author King Carmo
- */
-import java.util.TreeMap;
-import java.util.*;
-import java.util.Scanner;
+@Path("/users/RomToNum")
 
 public class RomanNumbers {
 
@@ -39,7 +35,8 @@ public class RomanNumbers {
         NumRom.put(1, "I");
 
     }
-
+    @GET
+    @Path("/{param}")
     public final static String toRoman(int random) {
         int l = NumRom.floorKey(random);
         if (random == l) {
